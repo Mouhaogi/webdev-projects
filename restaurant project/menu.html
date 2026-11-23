@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the menu at Le Baobab.">
+  <title>Our Menu | Le Baobab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Le Baobab</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu ☰</button>
+      <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Our Menu</a>
+        <a href="reservation.html">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <p class="eyebrow">FRESH AND TRADITIONAL</p>
+    <h1>Our Menu</h1>
+    <p>Choose a category to discover our dishes.</p>
+    <div class="filters" aria-label="Filter dishes">
+      <button type="button" class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-button" data-filter="main" aria-pressed="false">Main Dishes</button>
+      <button type="button" class="filter-button" data-filter="drink" aria-pressed="false">Drinks</button>
+      <button type="button" class="filter-button" data-filter="dessert" aria-pressed="false">Desserts</button>
+    </div>
+    <div class="cards menu-cards">
+      <article class="card dish" data-category="main"><h2>Thiéboudienne</h2><p>Rice with fish and vegetables.</p><p class="price">5,500 FCFA</p></article>
+      <article class="card dish" data-category="main"><h2>Chicken Yassa</h2><p>Chicken with onions, lemon, and rice.</p><p class="price">6,000 FCFA</p></article>
+      <article class="card dish" data-category="main"><h2>Beef Mafé</h2><p>Beef in peanut sauce, served with rice.</p><p class="price">5,000 FCFA</p></article>
+      <article class="card dish" data-category="drink"><h2>Bissap Juice</h2><p>Refreshing hibiscus drink.</p><p class="price">1,500 FCFA</p></article>
+      <article class="card dish" data-category="drink"><h2>Ginger Juice</h2><p>Fresh ginger drink.</p><p class="price">1,500 FCFA</p></article>
+      <article class="card dish" data-category="dessert"><h2>Thiakry</h2><p>Sweet millet couscous with yogurt.</p><p class="price">2,000 FCFA</p></article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Le Baobab · Dakar, Senegal</p><p>Fictional restaurant — Student web development project.</p></div></footer>
+</body>
+</html>

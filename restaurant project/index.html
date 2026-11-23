@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Le Baobab, a fictional Senegalese restaurant website.">
+  <title>Home | Le Baobab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Le Baobab</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu ☰</button>
+      <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="reservation.html">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">WELCOME TO LE BAOBAB</p>
+        <h1>A taste of Senegal</h1>
+        <p>Enjoy traditional Senegalese dishes in a warm and friendly atmosphere.</p>
+        <div class="actions">
+          <a class="button" href="menu.html">Explore Our Menu</a>
+          <a class="button button-outline" href="reservation.html">Book a Table</a>
+        </div>
+      </div>
+      <img class="hero-image" src="assets/Senegalese-dishes.jpg" alt="Traditional Senegalese food served on a plate" 
+      width="480" height="640">
+    </section>
+
+    <section class="container section">
+      <h2>Our Specialties</h2>
+      <p>Discover some of our favorite Senegalese meals.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Thiéboudienne</h3>
+          <p>Rice with fish and vegetables.</p>
+          <p class="price">5,500 FCFA</p>
+        </article>
+        <article class="card">
+          <h3>Chicken Yassa</h3>
+          <p>Chicken with onions, lemon, and rice.</p>
+          <p class="price">6,000 FCFA</p>
+        </article>
+        <article class="card">
+          <h3>Beef Mafé</h3>
+          <p>Beef in peanut sauce, served with rice.</p>
+          <p class="price">5,000 FCFA</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Le Baobab · Dakar, Senegal</p>
+      <p>Fictional restaurant — Student web development project.</p>
+    </div>
+  </footer>
+</body>
+</html>

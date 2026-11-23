@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulate a table reservation at Le Baobab.">
+  <title>Book a Table | Le Baobab</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">Le Baobab</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu ☰</button>
+      <nav id="main-navigation" class="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="reservation.html" aria-current="page">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <p class="eyebrow">WE LOOK FORWARD TO SEEING YOU</p>
+    <h1>Book a Table</h1>
+    <p>Fill out the form below to simulate a reservation.</p>
+    <form id="reservation-form" class="reservation-form">
+      <div class="form-field"><label for="guest-name">Full Name</label><input id="guest-name" name="name" type="text" required></div>
+      <div class="form-field"><label for="guest-email">Email</label><input id="guest-email" name="email" type="email" required></div>
+      <div class="form-field"><label for="reservation-date">Date</label><input id="reservation-date" name="date" type="date" required></div>
+      <div class="form-field"><label for="reservation-time">Time</label><select id="reservation-time" name="time" required><option value="">Choose a time</option><option value="12:00">12:00</option><option value="13:00">13:00</option><option value="14:00">14:00</option><option value="19:00">19:00</option><option value="20:00">20:00</option><option value="21:00">21:00</option></select></div>
+      <div class="form-field"><label for="guest-count">Number of Guests</label><select id="guest-count" name="guests" required><option value="">Choose a number</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select></div>
+      <button class="button" type="submit">Submit Reservation</button>
+      <p id="reservation-message" class="form-message" role="status" aria-live="polite"></p>
+    </form>
+    <p class="note">This is a demonstration form. No real reservation is made or sent to a restaurant.</p>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Le Baobab · Dakar, Senegal</p><p>Fictional restaurant — Student web development project.</p></div></footer>
+</body>
+</html>
